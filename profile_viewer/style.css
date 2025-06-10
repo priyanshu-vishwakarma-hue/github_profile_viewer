@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    overflow-x: hidden;  /* improtant */
+    width: 100vw;
+    height: 100vh;
+    background-color: #9fbbb7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.firstdiv{
+    font-size: 25px;
+    color: #0d473f;
+    text-shadow: 1px 1.2px 2px rgba(41, 90, 56, 0.938);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input::placeholder {
+    color: rgb(235, 227, 227);          /* Your custom color */
+    font-style: italic;   /* Optional */
+    opacity: 1;           /* Make sure it's fully visible */
+}
+
+input{
+    width: 400px;
+    height: 40px;
+    color: rgb(231, 227, 227);
+    background-color: #1d1f1db2;
+    padding-left: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none; 
+    outline: none; 
+    font-size: 20px;
+    box-shadow: 0px 0px 2px rgba(121, 14, 14, 0.253);
+}
+
+input:focus {
+    border: 1px solid rgb(23, 81, 148);  /* Custom border on focus */
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);  /* Optional glow */
+}
+button{
+    width: 90px;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #0d473f;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgba(121, 14, 14, 0.253);
+}
+button:hover{
+    background-color: #38615b;
+}
+
+.seconddiv{
+    width: 620px;
+    min-height: 10px;
+    background-color: #4aa194;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(121, 14, 14, 0.253);
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 30px;
+    display: none;
+}
+
+.follow{
+    font-size: 22px;
+    text-align: center;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile_image{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.personal_info{
+    font-size: 20px;  
+    line-height: 35px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    overflow-wrap: break-word;
+}
+
+.follow_box{
+    width: 320px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+}
+
+.visit{
+    width: 250px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Loader Styles */
+
+
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #FFF #FFF transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent #FF3D00 #FF3D00;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+    
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+    
