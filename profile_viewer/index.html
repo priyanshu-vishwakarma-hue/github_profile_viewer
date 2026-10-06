@@ -3,47 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub profile viwer</title>
+    <title>GitHub Profile Viewer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="main">
-        <div class="firstdiv">
-            <h1>GitHub profile viwer</h1>
-            <search>
-                <input type="text" id="input" class="" placeholder="search here..." >
-                <button id="search">search</button>
-            </search>
-        </div>
-        <div class="seconddiv">
-            <!-- <div class="personal_info">
-                <img src="../../zphoto.png" alt="" class="profile_image">
-                <div>
-                    <p style="font-size: 25px ;" id="name">priyanshu vishwakarma</p>
-                    <p id="skill"> Fullstack Developer</p>
-                </div>
-            </div>
-            <div class="follow_box">
-                <div class="follow">
-                    <div>
-                        <p>Follower</p>
-                        <p id="followers">20</p>
-                    </div>
-                    <div>
-                        <p>Following</p>
-                        <p id="following">24</p>
-                    </div>
-                    <div>
-                        <p>repository</p>
-                        <p id="public_repos">12</p>
-                    </div>
-                </div>
-                <div  >
-                    <a href="" target="_blank" > <button class="visit">VISIT PROFILE</button> </a>
-                </div>
-            </div> -->
-        </div>
-    </div>
+    <main class="main">
+        <section class="card shell">
+            <header class="firstdiv">
+                <h1>GitHub Profile Viewer</h1>
+                <p>Search any public GitHub username to see their profile summary.</p>
+            </header>
+
+            <form class="search" id="searchForm" novalidate>
+                <label class="sr-only" for="input">GitHub username</label>
+                <input type="text" id="input" placeholder="Enter username (e.g. torvalds)" autocomplete="off" required>
+                <button id="search" type="submit">Search</button>
+            </form>
+
+            <p id="status" class="status" aria-live="polite"></p>
+
+            <section class="seconddiv" id="result" aria-live="polite" aria-busy="false"></section>
+        </section>
+    </main>
 
     <script src="./script.js"></script>
 </body>
