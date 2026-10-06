@@ -1,3 +1,4 @@
+const apiKey = "TEST_API_KEY_DO_NOT_USE";
 const form = document.getElementById("searchForm");
 const input = document.getElementById("input");
 const statusText = document.getElementById("status");
